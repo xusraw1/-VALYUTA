@@ -1,0 +1,44 @@
+# BU DASTUR DAVLATLARNING VALYUTASINI CHIQARADI
+
+sumlar = {
+    "O'zbekiston":"O'zbekistonning валютаси nomi -SUM- : (Uzbekistan Sum)",
+    "Uzbekiston":"Uzbekistonning валютаси nomi -SUM- : (Uzbekistan Sum)",
+    "Rossiya":"Rossiyaning валютаси nomi -RUB- : (Russian Ruble) , 100 RUB = 17.000 SUM ",
+    "Amerika":"Amerikaning валютаси nomi -USD- : (US Dollar) , 100 USD = 1.086.000 SUM ",
+    "Ukraina":"Ukrainaning валютаси nomi -UAH- : (Hryvnia) , 100 UAH = 36.000 SUM ",
+    "Fransiya":"Fransiyaning валютаси nomi -EUR- : (Euro) , 100 EUR = 1.110.000 SUM ",
+    "Shveysariya":"Shveysariyaning валютаси nomi -CHF- : (Swiss Franc) , 100 CHF = 1.120.000 SUM ",
+    "Qozog'iston":"Qozog'istonning валютаси nomi -KZT- : (Tenge) , 100 KZT = 2.300 SUM ",
+    "Xitoy":"Xitoyning валютаси nomi -CNY- : (Yuan Renminbi) , 100 CNY = 165.000 SUM ",
+    "Koreya":"Koreyaning валютаси nomi -KRW- : (South Korean Won) , 100 KRW = 831 SUM ",
+    "Tojikiston":"Tojikistonning валютаси nomi -TJS- : (Somoni) , 100 TJS = 103.000 SUM ",
+    "Turkiya":"Turkiyaning валютаси nomi -TRY- : (Turkish Lira) , 100 TRY = 64.000 SUM ",
+    "Germaniya":"Germaniyaning валютаси nomi -EUR- : (Euro) , 100 EUR = 1.110.000 SUM ",
+    "Meksika":"Meksikaning валютаси nomi -MXV- : (Mexican Peso) , 100 MXV = 56.000 SUM ",
+    "Argentina":"Argenrinaning валютаси nomi -ARS- : (Argentine Peso) , 100 ARS = 8.600 SUM ",
+    "Qirg'iziston":"Qirg'izistonning валютаси -KGS- : (Som) , 100 KGS = 13.000 SUM ",
+    "Turkmaniston":"Turkmanistonning валютаси -TMT- : (Turkmenistan New Manat) , 100 TMT = 310.000 SUM ",
+    "Ispaniya":"Ispaniyaning валютаси nomi -EUR- : (Euro) , 100 EUR = 1.110.000 SUM ",
+    "Italiya":"Xitoyning валютаси nomi -EUR- : (Euro) , 100 EUR = 1.110.000 SUM ",
+    "Xindiston":"Xindistonning валютаси nomi -INR- : (Indian Rupee) , 100 INR = 13.000 SUM ",
+    "Misr":"Misrning валютаси nomi -EGP- : (Egyptian Pound) , 100 EGP = 57.000 ",
+    "Britaniya":"Britaniyaning валютаси nomi -GBP- : (Pound Sterling) , 100 GBP = 1.294.000 SUM ",
+    "Velikobritaniya":"Buyuk Britaniyaning валютаси nomi -GBP- : (Pound Sterling) , 100 GBP = 1.294.000 SUM ",
+    "Buyuk Britaniya":"Buyuk Britaniyaning валютаси nomi -GBP- : (Pound Sterling) , 100 GBP = 1.294.000 SUM ",
+    "Tailand":"Tailandning валютаси nomi -THB- : (Baht) , 100 THB = 34.000 SUM ",
+    "Singapur":"Singapurning валютаси nomi -SGD- : (Singapore Dollar) , 100 SGD = 773.000 SUM ",
+    "Yaponiya":"Yaponiyaning валютаси nomi -JPY- : (Yen) , 100 JPY = 8.000 SUM ",
+    "Kanada":"Kanadaning валютаси nomi -CAD- : (Canadian Dollar) , 100 CAD = 827.000 SUM ",
+    "Avstraliya":"Avstraliyaning валютаси nomi -AUD- : (Australian Dollar) , 100 AUD = 738.000 SUM ",
+    "Gruziya":"Gruziyaning валютаси nomi -GEL- : (Lari) , 100 GEL = 370.000 SUM ",
+}
+while True:
+    Valyuta = input("Biror bir DAVLATNI nomini kiriting (NOMLARNI lotinchada yozing !) uni VALYUTASIni bilish uchun (Kichkina harflar bilan kiriting iltimos )\n : ").title()
+    Valyuta1 = sumlar.get(Valyuta)
+    if Valyuta1 == None:
+        print("Bunday DAVLAT mavjud emas yoki XATO yozdiz ! ")
+        continue
+    else:
+        print(f"{Valyuta.title()} = {Valyuta1}")
+        break
+    break
